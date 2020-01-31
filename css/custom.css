@@ -1,0 +1,15 @@
+html {
+    scroll-behavior: smooth;
+}
+
+ul.social li {
+    display: inline-block;
+}
+
+.showcase_highlight {
+    font-size: 150px;
+    line-height: 150px;
+    display: block;
+    margin-bottom: 15px;
+    font-family: PlayfairDisplay;
+}

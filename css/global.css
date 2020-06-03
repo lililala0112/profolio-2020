@@ -3062,7 +3062,6 @@ blockquote:after {
 .wp-caption {
 	display: block;
 	margin: 0;
-	border-width: 8px;
 	border-style: solid;
 	max-width: 100%;
 	line-height: 0;
@@ -7739,7 +7738,7 @@ a.icon_bar_dribbble span.b {
 	margin-left: 2px
 }
 
-/* Timeline -------------------------------------------------------------------------- */
+/* Timeline -------------------------------------------------------------------------- 
 
 .timeline_items {
 	margin: 0 !important;
@@ -7765,7 +7764,6 @@ a.icon_bar_dribbble span.b {
 }
 
 .timeline_items li {
-	margin: 0 !important;
 	list-style: none !important;
 	width: 45%;
 	padding: 0 0 25px 55%;
@@ -7839,6 +7837,7 @@ a.icon_bar_dribbble span.b {
 .timeline_items li:nth-child(even) .desc {
 	text-align: right
 }
+*/
 
 /* How it works ---------------------------------------------------------------------- */
 
@@ -10414,7 +10413,7 @@ body.table-hover:not(.woocommerce-page) table tr:hover td a {
 	transition: all .3s ease-in-out
 }
 
-/* Timeline */
+/* Timeline 
 
 .style-simple .timeline_items {
 	background: none
@@ -10429,6 +10428,14 @@ body.table-hover:not(.woocommerce-page) table tr:hover td a {
 	padding: 0 0 0 50%;
 	background: none;
 	margin-bottom: 15px !important
+}
+
+.style-simple .timeline_items .desc li {
+	width: 100%;
+	padding: 0;
+	margin: 2rem;
+	text-align: left;
+	list-style-type: disc !important;
 }
 
 .style-simple .timeline_items li:nth-child(even) {
@@ -10502,6 +10509,7 @@ body.table-hover:not(.woocommerce-page) table tr:hover td a {
 	-o-transition: all .3s ease-in-out;
 	transition: all .3s ease-in-out
 }
+*/
 
 /* Quick fact */
 
@@ -19327,7 +19335,7 @@ div.dark_square #pp_full_res .pp_inline {
 .style-simple #Filters .filters_wrapper ul li a {
 	background: none;
 	border: 0;
-	padding: 14px 25px;
+	padding: 1rem;
 	position: relative;
 }
 
@@ -19570,6 +19578,8 @@ div.dark_square #pp_full_res .pp_inline {
 	display: none;
 }
 
+/*
+
 .style-simple .timeline_items li {
 	width: 50%;
 	padding: 0 0 0 50%;
@@ -19617,7 +19627,6 @@ div.dark_square #pp_full_res .pp_inline {
 	border-left: 0;
 	border-right: 2px solid rgba(0, 0, 0, 0.04);
 }
-
 .style-simple .timeline_items li:nth-child(even) h3 span {
 	left: 52%;
 	right: auto;
@@ -19636,6 +19645,19 @@ div.dark_square #pp_full_res .pp_inline {
 	border-left: 0;
 	border-right: 2px solid rgba(0, 0, 0, 0.04);
 }
+
+
+*/
+.style-simple .timeline_items li {
+	padding: 15px 25px 15px 0;
+
+}
+
+.style-simple .timeline_items li h3 {
+	border-left: 2px solid #e11763;
+	padding-left: 10px;
+}
+
 
 /* Animation */
 

@@ -1443,9 +1443,6 @@
 	background-color: #000119;
 }
 
-#Subheader {
-	background-color: rgba(247, 247, 247, 1);
-}
 
 .header-classic #Action_bar,
 .header-fixed #Action_bar,
@@ -2077,11 +2074,6 @@ a.mfn-link-6:before {
 
 #Subheader .title {
 	color: #444444;
-}
-
-#Subheader ul.breadcrumbs li,
-#Subheader ul.breadcrumbs li a {
-	color: rgba(68, 68, 68, 0.6);
 }
 
 #Footer,

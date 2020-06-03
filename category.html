@@ -26,6 +26,8 @@
     <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Patua+One:100,300,400,400italic,700'>
     <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lato:100,400,400italic,700'>
     <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Playfair+Display:100,400,400italic,700'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
 
     <!-- CSS -->
     <link rel='stylesheet' href='css/global.css'>
@@ -42,13 +44,15 @@
         <div class="creative-social">
             <ul class="social">
                 <li class="email">
-                    <a href="#" title="email"><i class="icon-email"></i></a>
+                    <a href="mailto:lililala0112@gmail.com" title="email"><i class="icon-email"></i></a>
                 </li>
                 <li class="github">
-                    <a href="#" title="Github"><i class="icon-github"></i></a>
+                    <a href="https://github.com/jmihuang?tab=repositories" target="_blank" title="Github"><i
+                            class="icon-github"></i></a>
                 </li>
-                <li class="linkedin">
-                    <a href="#" title="Linkin"><i class="icon-linkedin"></i></a>
+                <li>
+                    <a href="https://medium.com/%E6%BD%94%E7%B1%B3%E7%9A%84%E5%A5%87%E5%A6%99%E6%97%85%E7%A8%8B"
+                        target="_blank" title="Linkin"><i class="fab fa-medium"></i></a>
                 </li>
             </ul>
         </div>
@@ -59,34 +63,30 @@
                     <div class="top_bar_left">
                         <div class="logo">
                             <a id="logo" href="index-cv.html" title="BeCV - BeTheme" data-height="60"
-                                data-padding="30"><img class="logo-main scale-with-grid" src="images/cv-home-logo1.png"
-                                    data-retina="images/cv-home-logo1-retina.png" data-height="61" alt="cv"><img
-                                    class="logo-sticky scale-with-grid" src="images/cv-home-logo1.png"
-                                    data-retina="images/cv-home-logo1-retina.png" data-height="61" alt="cv"><img
-                                    class="logo-mobile scale-with-grid" src="images/cv-home-logo1.png"
-                                    data-retina="images/cv-home-logo1-retina.png" data-height="61" alt="cv"><img
-                                    class="logo-mobile-sticky scale-with-grid" src="images/cv-home-logo1.png"
-                                    data-retina="images/cv-home-logo1-retina.png" data-height="61" alt="cv"></a>
+                                data-padding="30"></a>
+                            <h1>Jamie's Profolio</h1>
+                            </a>
                         </div>
                         <div class="menu_wrapper">
                             <nav id="menu">
                                 <ul id="menu-menu" class="menu menu-main">
                                     <li>
-                                        <a href="#home"><span>Home</span></a>
+                                        <a href="index.html"><span>Home</span></a>
                                     </li>
                                     <li>
                                         <a href="category.html"><span>My work</span></a>
                                     </li>
                                     <li>
-                                        <a href="https://medium.com/%E6%BD%94%E7%B1%B3%E7%9A%84%E5%A5%87%E5%A6%99%E6%97%85%E7%A8%8B"
-                                            targe="_blank"><span>Medium</span></a>
+                                        <a href="index.html#experience"><span>Experience</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html#info"><span>Skill and Bio</span></a>
                                     </li>
                                 </ul>
                             </nav>
                             <a class="responsive-menu-toggle" href="#"><i class="icon-menu-fine"></i></a>
                         </div>
                     </div>
-
                 </div>
             </div>
             <div id="Action_bar">
@@ -116,34 +116,52 @@
             <header id="Header"></header>
         </div>
         <div id="Content">
+            <!-- Main Content -->
             <div class="content_wrapper clearfix">
                 <div class="sections_group">
+                    <div class="extra_content">
+                        <div class="section" style="padding-top:80px; padding-bottom:30px; ">
+                            <div class="section_wrapper clearfix">
+                                <div class="items_group clearfix">
+                                    <!-- One full width row-->
+                                    <div class="column one">
+                                        <div class="column_attr ">
+                                            <a href="index.html">
+                                                <h2 style="margin-right: 15%;">Jamie's Studio</h2>
+                                            </a>
+                                            <div id="Subheader">
+                                                <ul class="breadcrumbs">
+                                                    <li><a href="category.html">Works</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <!-- Portfolio filters -->
                     <div class="section section-filters">
                         <div class="section_wrapper clearfix">
-                            <!-- One full width row-->
-                            <div class="column one column_column ">
-                                <div class="column_attr ">
-                                    <h2 style="margin-top: 5%;">Jamie's Studio
-                                    </h2>
-                                    <h5>PROJECTS</h5>
-                                </div>
-                            </div>
                             <!--  Filter Area -->
-                            <div id="Filters" class="column one">
-                                <div class="filters_wrapper">
+                            <div id="Filters" class="column one isotope-filters">
+                                <span class="filters_wrapper" data-cat="">
                                     <ul class="categories">
-                                        <li class="cat-item cat-item-6 current-cat">
-                                            <a data-rel=".category-branding" href="category-branding.html">Branding</a>
+                                        <li class="uxui">
+                                            <a data-rel=".uxui" href="uxui.html">UXUI</a>
                                         </li>
-                                        <li class="cat-item cat-item-5">
-                                            <a data-rel=".category-design" href="category-design.html">Design</a>
+                                        <li class="webdesign">
+                                            <a data-rel=".webdesign" href="webdesign.html">Web Design</a>
                                         </li>
-                                        <li class="cat-item cat-item-4">
-                                            <a data-rel=".category-photos" href="category-photos.html">Photos</a>
+                                        <li class="webdev">
+                                            <a data-rel=".webdev" href="webdev.html">Web Developer</a>
                                         </li>
                                     </ul>
-                                </div>
+                                </span>
+                                <a class="filter-blank-links"
+                                    href="https://jmihuang.github.io/jmiworkspace/dist/project.html" target="blank"><i
+                                        class="fas fa-link"></i>早期作品</a>
+
                             </div>
                         </div>
                     </div>
@@ -152,218 +170,347 @@
                             <!-- One full width row-->
                             <div class="column one column_portfolio">
                                 <div class="portfolio_wrapper isotope_wrapper">
-                                    <ul class="portfolio_group lm_wrapper isotope masonry-hover">
-                                        <!-- Portfolio item -->
-                                        <li
-                                            class="portfolio-item isotope-item category-branding category-design has-thumbnail">
+                                    <ul class="portfolio_group lm_wrapper isotope masonry masonry-hover">
+                                        <!-- Camping Daddy -->
+                                        <li class="portfolio-item isotope-item uxui has-thumbnail">
                                             <div class="masonry-hover-wrapper">
                                                 <div class="hover-desc">
                                                     <div class="desc-inner">
                                                         <h3 class="entry-title"><a class="link"
-                                                                href="category-item.html">Aliquam eratac</a></h3>
-                                                        <div class="desc-wrappper"></div>
+                                                                href="category-item-camping.html">Camping-daddy</a></h3>
+                                                        <div class="desc-wrappper">
+                                                            脈絡訪查與調研 / Wireframe Prototype / 設計 /
+                                                        </div>
                                                     </div>
                                                     <div class="links-wrappper clearfix">
-                                                        <a class="zoom" href="images/home_showcase_portfolio_list1.jpg"
-                                                            rel="prettyphoto"><i class="icon-search"></i></a><a
-                                                            class="link" href="category-item.html"><i
+                                                        <a class="link" href="category-item-camping.html"><i
                                                                 class="icon-link"></i></a>
                                                     </div>
                                                 </div>
                                                 <div class="image-wrapper scale-with-grid">
-                                                    <a class="link" href="category-item.html"><img width="576"
-                                                            height="905"
-                                                            src="images/home_showcase_portfolio_list1-576x905.jpg"
-                                                            class="scale-with-grid wp-post-image"
-                                                            alt="home_showcase_portfolio_list1" />
+                                                    <a class="link" href="category-item-camping.html"><img width="576"
+                                                            src="images/thumbs/categalley-thum-13@2x.png"
+                                                            class="scale-with-grid wp-post-image" alt="camping daddy" />
                                                     </a>
                                                 </div>
                                             </div>
                                         </li>
-                                        <!-- Portfolio item -->
-                                        <li
-                                            class="portfolio-item isotope-item category-branding category-photos has-thumbnail">
+                                        <!-- Youbike -->
+                                        <li class="portfolio-item isotope-item webdev has-thumbnail">
                                             <div class="masonry-hover-wrapper">
                                                 <div class="hover-desc">
                                                     <div class="desc-inner">
                                                         <h3 class="entry-title"><a class="link"
-                                                                href="portfolio-item-4.html">Curabitur et ligula</a>
+                                                                href="category-item-uuu.html">Youbike官網 / 維護系統</a></h3>
+                                                        <div class="desc-wrappper">
+                                                            RWD切版 / API串接資料 / 後端溝通
+                                                        </div>
+                                                    </div>
+                                                    <div class="links-wrappper clearfix">
+                                                        <a class="link" href="category-item-uuu.html"><i
+                                                                class="icon-link"></i></a>
+                                                    </div>
+                                                </div>
+                                                <div class="image-wrapper scale-with-grid">
+                                                    <a class="link" href="category-item-uuu.html"><img width="576"
+                                                            src="images/thumbs/categalley-thum-1@2x.png"
+                                                            class="scale-with-grid wp-post-image" alt="camping daddy" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <!--禮品世界 -->
+                                        <li class="portfolio-item isotope-item webdesign webdev has-thumbnail">
+                                            <div class="masonry-hover-wrapper">
+                                                <div class="hover-desc">
+                                                    <div class="desc-inner">
+                                                        <h3 class="entry-title"><a class="link"
+                                                                href="category-item-gift.html">禮品世界</a></h3>
+                                                        <div class="desc-wrappper">
+                                                            業務 / 規劃 / 設計 / 切版 / 測試
+                                                        </div>
+                                                    </div>
+                                                    <div class="links-wrappper clearfix">
+                                                        <a class="link" href="category-item-gift.html"><i
+                                                                class="icon-link"></i></a>
+                                                    </div>
+                                                </div>
+                                                <div class="image-wrapper scale-with-grid">
+                                                    <a class="link" href="category-item-gift.html"><img width="576"
+                                                            src="images/thumbs/categalley-thum-3@2x.png"
+                                                            class="scale-with-grid wp-post-image" alt="camping daddy" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <!-- 布魯斯 -->
+                                        <li class="portfolio-item isotope-item webdev has-thumbnail">
+                                            <div class="masonry-hover-wrapper">
+                                                <div class="hover-desc">
+                                                    <div class="desc-inner">
+                                                        <h3 class="entry-title"><a class="link"
+                                                                href="https://www.cenweb.info"
+                                                                target="_blank">布魯斯遊學團</a></h3>
+                                                        <div class="desc-wrappper">
+                                                            業務 / 規劃 / 設計 / 切版 / 測試
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="links-wrappper clearfix">
+                                                        <a class="link" href="https://www.cenweb.info"
+                                                            target="_blank"><i class="icon-link"></i></a>
+                                                    </div>
+                                                </div>
+                                                <div class="image-wrapper scale-with-grid">
+                                                    <a class="link" href="https://www.cenweb.info" target="_blank"><img
+                                                            width="576" src="images/thumbs/categalley-thum-4@2x.png"
+                                                            class="scale-with-grid wp-post-image" alt="cenweb" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <!-- 天堂花園 -->
+                                        <li class="portfolio-item isotope-item webdev has-thumbnail">
+                                            <div class="masonry-hover-wrapper">
+                                                <div class="hover-desc">
+                                                    <div class="desc-inner">
+                                                        <h3 class="entry-title"><a class="link"
+                                                                href="https://www.paradiso-garden.com/mk/index.html"
+                                                                target="_blank">天堂花園</a>
                                                         </h3>
-                                                        <div class="desc-wrappper"></div>
+                                                        <div class="desc-wrappper">
+                                                            切版
+                                                        </div>
+
                                                     </div>
                                                     <div class="links-wrappper clearfix">
-                                                        <a class="zoom" href="images/home_showcase_portfolio_list3.jpg"
-                                                            rel="prettyphoto"><i class="icon-search"></i></a><a
-                                                            class="link" href="portfolio-item-4.html"><i
-                                                                class="icon-link"></i></a>
+                                                        <a class="link"
+                                                            href="https://www.paradiso-garden.com/mk/index.html"
+                                                            target="_blank"><i class="icon-link"></i></a>
                                                     </div>
                                                 </div>
                                                 <div class="image-wrapper scale-with-grid">
-                                                    <a class="link" href="portfolio-item-4.html"><img width="576"
-                                                            height="741"
-                                                            src="images/home_showcase_portfolio_list3-576x741.jpg"
-                                                            class="scale-with-grid wp-post-image"
-                                                            alt="home_showcase_portfolio_list3" />
+                                                    <a class="link" href="https://www.paradiso-garden.com/mk/index.html"
+                                                        target="_blank"><img width="576"
+                                                            src="images/thumbs/categalley-thum-5@2x.png"
+                                                            class="scale-with-grid wp-post-image" alt="cenweb" />
                                                     </a>
                                                 </div>
                                             </div>
                                         </li>
-                                        <!-- Portfolio item -->
-                                        <li class="portfolio-item isotope-item category-branding has-thumbnail">
+                                        <!-- 隱適美矯正 -->
+                                        <li class="portfolio-item isotope-item webdesign has-thumbnail">
                                             <div class="masonry-hover-wrapper">
                                                 <div class="hover-desc">
                                                     <div class="desc-inner">
                                                         <h3 class="entry-title"><a class="link"
-                                                                href="portfolio-item-8.html">Integer aliquam purus</a>
+                                                                href="https://alignerdr.com.tw/"
+                                                                target="_blank">隱適美矯正</a>
                                                         </h3>
-                                                        <div class="desc-wrappper"></div>
+                                                        <div class="desc-wrappper">
+                                                            設計
+                                                        </div>
+
                                                     </div>
                                                     <div class="links-wrappper clearfix">
-                                                        <a class="zoom" href="images/home_showcase_portfolio_list4.jpg"
-                                                            rel="prettyphoto"><i class="icon-search"></i></a><a
-                                                            class="link" href="portfolio-item-8.html"><i
-                                                                class="icon-link"></i></a>
+                                                        <a class="link" href="https://alignerdr.com.tw/"
+                                                            target="_blank"><i class="icon-link"></i></a>
                                                     </div>
                                                 </div>
                                                 <div class="image-wrapper scale-with-grid">
-                                                    <a class="link" href="portfolio-item-8.html"><img width="576"
-                                                            height="576"
-                                                            src="images/home_showcase_portfolio_list4-576x576.jpg"
-                                                            class="scale-with-grid wp-post-image"
-                                                            alt="home_showcase_portfolio_list4" />
+                                                    <a class="link" href="https://alignerdr.com.tw/"
+                                                        target="_blank"><img width="576"
+                                                            src="images/thumbs/categalley-thum-6@2x.png"
+                                                            class="scale-with-grid wp-post-image" />
                                                     </a>
                                                 </div>
                                             </div>
                                         </li>
-                                        <!-- Portfolio item -->
-                                        <li
-                                            class="portfolio-item isotope-item category-branding category-photos has-thumbnail">
+                                        <!-- Daily UI -->
+                                        <li class="portfolio-item isotope-item uxui has-thumbnail">
                                             <div class="masonry-hover-wrapper">
                                                 <div class="hover-desc">
                                                     <div class="desc-inner">
                                                         <h3 class="entry-title"><a class="link"
-                                                                href="portfolio-item-5.html">Eleifend justo vel</a></h3>
-                                                        <div class="desc-wrappper"></div>
+                                                                href="ategory-item-dailyui.html">Daily UI</a>
+                                                        </h3>
+                                                        <div class="desc-wrappper">
+                                                            Sketch / 設計
+                                                        </div>
+
                                                     </div>
                                                     <div class="links-wrappper clearfix">
-                                                        <a class="zoom" href="images/home_showcase_portfolio_list5.jpg"
-                                                            rel="prettyphoto"><i class="icon-search"></i></a><a
-                                                            class="link" href="portfolio-item-5.html"><i
+                                                        <a class="link" href="category-item-dailyui.html"><i
                                                                 class="icon-link"></i></a>
                                                     </div>
                                                 </div>
                                                 <div class="image-wrapper scale-with-grid">
-                                                    <a class="link" href="portfolio-item-5.html"><img width="576"
-                                                            height="741"
-                                                            src="images/home_showcase_portfolio_list5-576x741.jpg"
-                                                            class="scale-with-grid wp-post-image"
-                                                            alt="home_showcase_portfolio_list5" />
+                                                    <a class="link" href="ategory-item-dailyui.html"><img width="576"
+                                                            src="images/thumbs/categalley-thum-7@2x.png"
+                                                            class="scale-with-grid wp-post-image" />
                                                     </a>
                                                 </div>
                                             </div>
                                         </li>
-                                        <!-- Portfolio item -->
-                                        <li
-                                            class="portfolio-item isotope-item category-branding category-design wide has-thumbnail">
+                                        <!-- 孕婦手冊-->
+                                        <li class="portfolio-item isotope-item uxui has-thumbnail">
                                             <div class="masonry-hover-wrapper">
                                                 <div class="hover-desc">
                                                     <div class="desc-inner">
                                                         <h3 class="entry-title"><a class="link"
-                                                                href="portfolio-item-11.html">Nulla ipsum dolor</a></h3>
-                                                        <div class="desc-wrappper"></div>
+                                                                href="https://medium.com/%E6%BD%94%E7%B1%B3%E7%9A%84%E5%A5%87%E5%A6%99%E6%97%85%E7%A8%8B/%E5%AD%95%E5%A9%A6%E6%89%8B%E5%86%8A-%E4%BD%BF%E7%94%A8%E9%AB%94%E9%A9%97%E6%94%B9%E8%89%AF%E8%A8%88%E7%95%AB-7669078889e9"
+                                                                target="_blank">孕婦手冊改良計畫</a>
+                                                        </h3>
+                                                        <div class="desc-wrappper">
+                                                            使用者脈絡分析，同刊登台灣使用者體驗文章
+                                                        </div>
+
                                                     </div>
                                                     <div class="links-wrappper clearfix">
-                                                        <a class="zoom" href="images/home_showcase_portfolio_list6.jpg"
-                                                            rel="prettyphoto"><i class="icon-search"></i></a><a
-                                                            class="link" href="portfolio-item-11.html"><i
-                                                                class="icon-link"></i></a>
+                                                        <a class="link"
+                                                            href="https://medium.com/%E6%BD%94%E7%B1%B3%E7%9A%84%E5%A5%87%E5%A6%99%E6%97%85%E7%A8%8B/%E5%AD%95%E5%A9%A6%E6%89%8B%E5%86%8A-%E4%BD%BF%E7%94%A8%E9%AB%94%E9%A9%97%E6%94%B9%E8%89%AF%E8%A8%88%E7%95%AB-7669078889e9"
+                                                            target="_blank"><i class="icon-link"></i></a>
                                                     </div>
                                                 </div>
                                                 <div class="image-wrapper scale-with-grid">
-                                                    <a class="link" href="portfolio-item-11.html"><img width="576"
-                                                            height="741"
-                                                            src="images/home_showcase_portfolio_list6-576x741.jpg"
-                                                            class="scale-with-grid wp-post-image"
-                                                            alt="home_showcase_portfolio_list6" />
+                                                    <a class="link" href=" href="
+                                                        https://medium.com/%E6%BD%94%E7%B1%B3%E7%9A%84%E5%A5%87%E5%A6%99%E6%97%85%E7%A8%8B/%E5%AD%95%E5%A9%A6%E6%89%8B%E5%86%8A-%E4%BD%BF%E7%94%A8%E9%AB%94%E9%A9%97%E6%94%B9%E8%89%AF%E8%A8%88%E7%95%AB-7669078889e9"
+                                                        target="_blank""><img width=" 576"
+                                                        src="images/thumbs/categalley-thum-8@2x.png"
+                                                        class="scale-with-grid wp-post-image" />
                                                     </a>
                                                 </div>
                                             </div>
                                         </li>
-                                        <!-- Portfolio item -->
-                                        <li class="portfolio-item isotope-item category-branding has-thumbnail">
+                                        <!-- 工研院-->
+                                        <li class="portfolio-item isotope-item webdesign has-thumbnail">
                                             <div class="masonry-hover-wrapper">
                                                 <div class="hover-desc">
                                                     <div class="desc-inner">
                                                         <h3 class="entry-title"><a class="link"
-                                                                href="portfolio-item-2.html">Aliquam sem amet</a></h3>
-                                                        <div class="desc-wrappper"></div>
+                                                                href="category-item-itri.html" target="_blank">工研院
+                                                                後台設計</a>
+                                                        </h3>
+                                                        <div class="desc-wrappper">
+                                                            改良現有介面符合使用者邏輯，後台設計
+                                                        </div>
+
                                                     </div>
                                                     <div class="links-wrappper clearfix">
-                                                        <a class="zoom" href="images/home_showcase_portfolio_list9.jpg"
-                                                            rel="prettyphoto"><i class="icon-search"></i></a><a
-                                                            class="link" href="portfolio-item-2.html"><i
-                                                                class="icon-link"></i></a>
+                                                        <a class="link" href="category-item-itri.html"
+                                                            target="_blank"><i class="icon-link"></i></a>
                                                     </div>
                                                 </div>
                                                 <div class="image-wrapper scale-with-grid">
-                                                    <a class="link" href="portfolio-item-2.html"><img width="576"
-                                                            height="741"
-                                                            src="images/home_showcase_portfolio_list9-576x741.jpg"
-                                                            class="scale-with-grid wp-post-image"
-                                                            alt="home_showcase_portfolio_list9" />
+                                                    <a class="link" href="category-item-itri.html"
+                                                        target="_blank""><img width=" 576"
+                                                        src="images/thumbs/categalley-thum-9@2x.png"
+                                                        class="scale-with-grid wp-post-image" />
                                                     </a>
                                                 </div>
                                             </div>
                                         </li>
-                                        <!-- Portfolio item -->
-                                        <li
-                                            class="portfolio-item isotope-item category-branding category-design category-photos has-thumbnail">
+                                        <!-- 光合貼-->
+                                        <li class="portfolio-item isotope-item webdesign has-thumbnail">
                                             <div class="masonry-hover-wrapper">
                                                 <div class="hover-desc">
                                                     <div class="desc-inner">
                                                         <h3 class="entry-title"><a class="link"
-                                                                href="portfolio-item-3.html">Cum sociis natoque</a></h3>
-                                                        <div class="desc-wrappper"></div>
+                                                                href="category-item-if.html">光合貼</a>
+                                                        </h3>
+                                                        <div class="desc-wrappper">
+                                                            給予現有官網改良建議與設計
+                                                        </div>
+
                                                     </div>
                                                     <div class="links-wrappper clearfix">
-                                                        <a class="zoom" href="images/home_showcase_portfolio_list10.jpg"
-                                                            rel="prettyphoto"><i class="icon-search"></i></a><a
-                                                            class="link" href="portfolio-item-3.html"><i
+                                                        <a class="link" href="category-item-if.html"><i
                                                                 class="icon-link"></i></a>
                                                     </div>
                                                 </div>
                                                 <div class="image-wrapper scale-with-grid">
-                                                    <a class="link" href="portfolio-item-3.html"><img width="576"
-                                                            height="905"
-                                                            src="images/home_showcase_portfolio_list10-576x905.jpg"
-                                                            class="scale-with-grid wp-post-image"
-                                                            alt="home_showcase_portfolio_list10" />
+                                                    <a class="link" href="category-item-if.html"><img width=" 576"
+                                                            src="images/thumbs/categalley-thum-10@2x.png"
+                                                            class="scale-with-grid wp-post-image" />
                                                     </a>
                                                 </div>
                                             </div>
                                         </li>
-                                        <!-- Portfolio item -->
-                                        <li class="portfolio-item isotope-item category-branding has-thumbnail">
+                                        <!-- 志工訪談 APP-->
+                                        <li class="portfolio-item isotope-item uxui has-thumbnail">
                                             <div class="masonry-hover-wrapper">
                                                 <div class="hover-desc">
                                                     <div class="desc-inner">
                                                         <h3 class="entry-title"><a class="link"
-                                                                href="portfolio-item-9.html">Massa ac turpis</a></h3>
-                                                        <div class="desc-wrappper"></div>
+                                                                href="category-item-dsg.html">志工訪談APP</a>
+                                                        </h3>
+                                                        <div class="desc-wrappper">
+                                                            與大數據團隊合作，脈絡訪查，Prototype測試
+                                                        </div>
+
                                                     </div>
                                                     <div class="links-wrappper clearfix">
-                                                        <a class="zoom" href="images/home_showcase_portfolio_list13.jpg"
-                                                            rel="prettyphoto"><i class="icon-search"></i></a><a
-                                                            class="link" href="portfolio-item-9.html"><i
+                                                        <a class="link" href="category-item-dsg.html"><i
                                                                 class="icon-link"></i></a>
                                                     </div>
                                                 </div>
                                                 <div class="image-wrapper scale-with-grid">
-                                                    <a class="link" href="portfolio-item-9.html"><img width="576"
-                                                            height="576"
-                                                            src="images/home_showcase_portfolio_list13-576x576.jpg"
-                                                            class="scale-with-grid wp-post-image"
-                                                            alt="home_showcase_portfolio_list13" />
+                                                    <a class="link" href="category-item-dsg.html"><img width=" 576"
+                                                            src="images/thumbs/categalley-thum-11@2x.png"
+                                                            class="scale-with-grid wp-post-image" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <!-- Line-->
+                                        <li class="portfolio-item isotope-item webdesign has-thumbnail">
+                                            <div class="masonry-hover-wrapper">
+                                                <div class="hover-desc">
+                                                    <div class="desc-inner">
+                                                        <h3 class="entry-title"><a class="link"
+                                                                href="category-item-line.html">Line Partner</a>
+                                                        </h3>
+                                                        <div class="desc-wrappper">
+                                                            版面設計
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="links-wrappper clearfix">
+                                                        <a class="link" href="category-item-line.html"><i
+                                                                class="icon-link"></i></a>
+                                                    </div>
+                                                </div>
+                                                <div class="image-wrapper scale-with-grid">
+                                                    <a class="link" href="category-item-line.html"><img width=" 576"
+                                                            src="images/thumbs/categalley-thum-12@2x.png"
+                                                            class="scale-with-grid wp-post-image" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <!-- Camping admin-->
+                                        <li class="portfolio-item isotope-item webdev has-thumbnail">
+                                            <div class="masonry-hover-wrapper">
+                                                <div class="hover-desc">
+                                                    <div class="desc-inner">
+                                                        <h3 class="entry-title"><a class="link"
+                                                                href="category-item-campadmin.html">Camping Daddy
+                                                                後台管理平台</a>
+                                                        </h3>
+                                                        <div class="desc-wrappper">
+                                                            後台管理平台 Vue/Vuex
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="links-wrappper clearfix">
+                                                        <a class="link" href="category-item-campadmin.html"><i
+                                                                class="icon-link"></i></a>
+                                                    </div>
+                                                </div>
+                                                <div class="image-wrapper scale-with-grid">
+                                                    <a class="link" href="category-item-campadmin.html"><img
+                                                            width=" 576" src="images/thumbs/categalley-thum-2@2x.png"
+                                                            class="scale-with-grid wp-post-image" />
                                                     </a>
                                                 </div>
                                             </div>
@@ -377,38 +524,6 @@
             </div>
         </div>
         <footer id="Footer" class="clearfix">
-            <div class="widgets_wrapper" style="padding:70px 0">
-                <div class="container">
-                    <div class="column one">
-                        <aside class="widget_text widget widget_custom_html">
-                            <div class="textwidget custom-html-widget">
-                                <hr class="no_line" style="margin:0 auto 80px">
-                                <div style="text-align:center">
-                                    <img src="images/cv-home-logo-footer.png">
-                                    <hr class="no_line" style="margin:0 auto 40px">
-                                    <p>
-                                        Contact Me<br>
-                                        <ul class="social">
-                                            <li class="email">
-                                                <a href="#" title="email"><i class="icon-email"></i></a>
-                                            </li>
-                                            <li class="github">
-                                                <a href="#" title="Github"><i class="icon-github"></i></a>
-                                            </li>
-                                            <li class="linkedin">
-                                                <a href="#" title="Linkin"><i class="icon-linkedin"></i></a>
-                                            </li>
-                                        </ul>
-                                        <a href="mailto:lililala0112@gmail.com">lililala0112@gmail.com</a>
-                                    </p>
-                                    <hr class="no_line" style="margin:0 auto 30px">
-
-                                </div>
-                            </div>
-                        </aside>
-                    </div>
-                </div>
-            </div>
             <div class="footer_copy">
                 <div class="container">
                     <div class="column one">
@@ -431,7 +546,12 @@
     <script src="js/animations/animations.js"></script>
     <script src="js/translate3d.js"></script>
     <script src="js/scripts.js"></script>
-
+    <script>
+        const item = location.href.split('#')[1];
+        $(function () {
+            $('.categories li.' + item + '').find('a').click();
+        });
+    </script>
 
 </body>
 

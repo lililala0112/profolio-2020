@@ -2481,10 +2481,9 @@ body.header-stack:not(.template-slider) #Header {
 /* #Subheader
 ================================================== */
 #Subheader {
-    background-color: rgba(0, 0, 0, .02);
     background-position: center top;
     background-repeat: no-repeat;
-    padding: 30px 0;
+    padding: 10px 0;
     position: relative;
 }
 
@@ -2506,14 +2505,6 @@ body.header-stack:not(.template-slider) #Header {
     float: left;
 }
 
-#Subheader ul.breadcrumbs {
-    display: block;
-    width: 30%;
-    margin: 1px 0 0;
-    font-size: 1em !important;
-    float: right;
-    text-align: right;
-}
 
 #Subheader ul.breadcrumbs li {
     display: inline-block;
@@ -2528,18 +2519,6 @@ body.header-stack:not(.template-slider) #Header {
     margin: 0 10px;
     opacity: .4;
     filter: alpha(opacity=40);
-}
-
-#Subheader:after {
-    content: "";
-    height: 3px;
-    width: 100%;
-    display: block;
-    position: absolute;
-    left: 0;
-    bottom: -3px;
-    z-index: 1;
-    background: url(../images/box_shadow.png) repeat-x left top;
 }
 
 #Subheader ul.woocommerce-breadcrumb li:last-child span {
@@ -2584,9 +2563,19 @@ body.header-stack:not(.template-slider) #Header {
 }
 
 .subheader-both-center #Subheader .breadcrumbs {
-    width: 100%;
-    text-align: center;
     margin-top: 10px;
+}
+
+#Subheader .breadcrumbs li a {
+    cursor: pointer;
+}
+
+.breadcrumbs li+li:before {
+    content: "\e915";
+    font-family: "mfn-icons";
+    font-style: normal;
+    font-weight: 400;
+    padding: 0 7px 0 5px;
 }
 
 /* #Post
@@ -6151,7 +6140,6 @@ body {
 
     #Header_creative #Top_bar {
         position: static;
-        margin: 0 8%;
         width: 84%;
     }
 
@@ -7414,44 +7402,6 @@ body {
         text-align: center;
     }
 
-    /* Timeline */
-    .timeline_items {
-        background-position: 91px top;
-    }
-
-    .timeline_items li {
-        padding: 0 0 25px 150px !important;
-        background: url(../images/timeline_right.png) no-repeat !important;
-        background-position: 50px top !important;
-        width: auto;
-    }
-
-    .timeline_items li h3 span {
-        left: 0 !important;
-        right: auto;
-    }
-
-    .timeline_items li h3,
-    .timeline_items li:nth-child(even) h3 {
-        text-align: left;
-    }
-
-    .timeline_items li h3:before {
-        left: 93px;
-    }
-
-    .timeline_items li .desc,
-    .timeline_items li:nth-child(even) .desc {
-        text-align: left;
-    }
-
-    .timeline_items li .desc:before {
-        display: none;
-    }
-
-    .timeline_items:after {
-        left: 93px;
-    }
 
     /* Testimonials list */
     .testimonials_list .item {
@@ -7740,125 +7690,104 @@ body {
 
 /* 	#Mobile (Portrait)																			< 480
 ===================================================================================================== */
+
+/* 
 @media only screen and (max-width: 479px) {
     #Top_bar a.button.action_button {
         margin-right: 0;
     }
 
     /* Post nav */
-    .post-nav {
-        padding: 10px 10px 4px;
-    }
-
-    /* Portfolio list */
-    body:not(.with_aside) .portfolio_group.list .portfolio-item .portfolio-item-fw-wrapper {
-        width: 260px;
-    }
-
-    /* Filters */
-    #Filters .filters_buttons li {
-        margin-right: 10px;
-    }
-
-    #Filters .filters_buttons li.label {
-        display: none;
-    }
-
-    #Filters .filters_buttons li i.icon-docs,
-    #Filters .filters_buttons li i.icon-tag {
-        display: none;
-    }
-
-    /* Team */
-    .team.team_horizontal .image_frame {
-        width: 100%;
-        margin: 0 0 15px;
-        float: none;
-    }
-
-    .team.team_horizontal .desc_wrapper {
-        width: 100%;
-        float: none;
-    }
-
-    /* Timeline */
-    .timeline_items {
-        background-position: 21px top;
-    }
-
-    .timeline_items li {
-        padding: 0 0 25px 80px !important;
-        background-position: -20px top !important;
-    }
-
-    .timeline_items li h3 span {
-        display: block;
-        position: relative;
-        margin-bottom: 20px;
-        clear: both;
-    }
-
-    .timeline_items li h3:before {
-        left: 24px;
-    }
-
-    .timeline_items:after {
-        left: 23px;
-    }
-
-    /* Testimonials slider */
-    .testimonials_slider a.slider_prev {
-        display: none !important;
-    }
-
-    .testimonials_slider a.slider_next {
-        display: none !important;
-    }
-
-    .testimonials_slider .testimonials_slider_ul li {
-        padding: 0;
-    }
-
-    /* Respond */
-    #respond .comment-form-author {
-        width: 99%;
-        margin-right: 0;
-        float: none;
-    }
-
-    #respond .comment-form-email {
-        width: 99%;
-        margin-right: 0;
-        float: none;
-    }
-
-    #respond .comment-form-url {
-        width: 99%;
-        float: none;
-    }
-
-    #respond input[type="text"],
-    #respond input[type="password"],
-    #respond input[type="email"],
-    #respond select {
-        width: 100%;
-    }
-
-    #respond .comment-form-comment textarea {
-        width: 100%;
-    }
-
-    #comments .commentlist .children {
-        margin-left: 0;
-        padding-left: 30px;
-    }
-
-    #respond .required {
-        right: 11px;
-    }
+.post-nav {
+    padding: 10px 10px 4px;
 }
 
-@media only screen and (max-width: 767px) and (min-width: 480px) {
+/* Portfolio list */
+body:not(.with_aside) .portfolio_group.list .portfolio-item .portfolio-item-fw-wrapper {
+    width: 260px;
+}
+
+/* Filters */
+#Filters .filters_buttons li {
+    margin-right: 10px;
+}
+
+#Filters .filters_buttons li.label {
+    display: none;
+}
+
+#Filters .filters_buttons li i.icon-docs,
+#Filters .filters_buttons li i.icon-tag {
+    display: none;
+}
+
+/* Team */
+.team.team_horizontal .image_frame {
+    width: 100%;
+    margin: 0 0 15px;
+    float: none;
+}
+
+.team.team_horizontal .desc_wrapper {
+    width: 100%;
+    float: none;
+}
+
+
+
+/* Testimonials slider */
+.testimonials_slider a.slider_prev {
+    display: none !important;
+}
+
+.testimonials_slider a.slider_next {
+    display: none !important;
+}
+
+.testimonials_slider .testimonials_slider_ul li {
+    padding: 0;
+}
+
+/* Respond */
+#respond .comment-form-author {
+    width: 99%;
+    margin-right: 0;
+    float: none;
+}
+
+#respond .comment-form-email {
+    width: 99%;
+    margin-right: 0;
+    float: none;
+}
+
+#respond .comment-form-url {
+    width: 99%;
+    float: none;
+}
+
+#respond input[type="text"],
+#respond input[type="password"],
+#respond input[type="email"],
+#respond select {
+    width: 100%;
+}
+
+#respond .comment-form-comment textarea {
+    width: 100%;
+}
+
+#comments .commentlist .children {
+    margin-left: 0;
+    padding-left: 30px;
+}
+
+#respond .required {
+    right: 11px;
+}
+}
+
+*/ @media only screen and (max-width: 767px) and (min-width: 480px) {
     #Content .gallery:not(.gallery-columns-1) .gallery-item {
         width: 50%;
     }

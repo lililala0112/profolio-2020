@@ -1,0 +1,58 @@
+html {
+    scroll-behavior: smooth;
+}
+
+;
+
+ul.social li {
+    display: inline-block;
+}
+
+.showcase_highlight {
+    font-size: 150px;
+    line-height: 150px;
+    display: block;
+    margin-bottom: 15px;
+    font-family: PlayfairDisplay;
+}
+
+.filter-blank-links {
+    padding: 1rem;
+    vertical-align: top;
+    color: #858585;
+    border-bottom: 1px solid #ddd;
+    display: inline-block;
+}
+
+.filter-blank-links i {
+    margin: 0 .5rem;
+}
+
+
+
+.filter-blank-links:hover {
+    color: #e11763;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 680px) {
+
+    .style-simple #Filters ul li,
+    .filter-blank-links {
+        width: 100% !important;
+        margin: 0;
+        display: block;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .style-simple #Filters ul li {
+        text-align: left;
+    }
+
+    .filter-blank-links {
+        text-align: right;
+    }
+
+
+}
